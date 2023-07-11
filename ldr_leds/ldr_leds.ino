@@ -19,22 +19,22 @@ void setup()
 void loop()
 {
       digitalWrite(verde, LOW);
-      delay(0); // Wait for 1000 millisecond(s)
+      delay(0); 
 
   if(intensidade >= 680 and intensidade <= 1017){
       digitalWrite(vermelho, HIGH);
-      delay(150); // Wait for 1000 millisecond(s)
+      delay(150); 
       digitalWrite(vermelho, LOW);
-      delay(150); // Wait for 1000 millisecond(s)
+      delay(150); 
 
   }else if(intensidade >= 400 and intensidade <= 899){
       digitalWrite(amarelo, HIGH);
-      delay(300); // Wait for 1000 millisecond(s)
+      delay(300); 
       digitalWrite(amarelo, LOW);
-      delay(300); // Wait for 1000 millisecond(s)
+      delay(300); 
   }else{
       digitalWrite(verde, HIGH);
-      delay(0); // Wait for 1000 millisecond(s)
+      delay(0);
 
   }
 
